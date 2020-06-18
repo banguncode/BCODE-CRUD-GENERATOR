@@ -22,7 +22,7 @@ BCODE CRUD GENERATOR adalah generator sederhana khusus untuk CodeIgniter 4, memp
 
 1. Kloning repositori
 
-``` bash
+```bash
 git clone https://github.com/banguncode/BCODE-CRUD-GENERATOR.git
 ```
 
