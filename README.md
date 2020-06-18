@@ -28,7 +28,13 @@ git clone https://github.com/banguncode/BCODE-CRUD-GENERATOR.git
 
 3. Salin file `env` dan ganti nama menjadi `.env`
 
-4. Hapus tanda komentar pada bagian seperti di bawah ini, kemudian sesuaikan konfigurasi database
+4. Hapus tanda komentar pada bagian *ENVIRONMENT* dan ubah production menjadi development
+
+```environment 
+CI_ENVIRONMENT = development
+```
+
+5. Hapus tanda komentar pada bagian *DATABASE* kemudian sesuaikan konfigurasi database
 
 ```environment 
 database.default.hostname = localhost
