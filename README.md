@@ -20,10 +20,12 @@ BCODE CRUD GENERATOR adalah generator sederhana khusus untuk CodeIgniter 4, memp
 
 ## Instalasi
 
-1. Kloning repositori 
+1. Kloning repositori
+
 ``` bash
 git clone https://github.com/banguncode/BCODE-CRUD-GENERATOR.git
 ```
+
 2. Salin isi folder `public` dan `app` ke dalam direktori root proyek anda 
 
 3. Salin file `env` dan ganti nama menjadi `.env`
