@@ -422,7 +422,7 @@ class '.$data['model'].' extends Model{
 
          // make model
          $formFile = fopen(APPPATH.'Models/'.$data['model'].'.php','w')
-            or die("Access to the path '".APPPATH."app/' is denied. Change your permision path to 777.");
+            or $this->failServerError("Access to the path '".APPPATH."' is denied. Change your permision path to 777.");
          fwrite($formFile, $modelTemplate);
          fclose($formFile);
          // .make model
@@ -690,7 +690,7 @@ class '.$data['model'].' extends Model{
 
          // make list
          $listFile = fopen(APPPATH.'Views/'.$data['table'].'/list.php','w')
-            or die("Access to the path '".APPPATH."app/' is denied. Change your permision path to 777.");
+            or $this->failServerError("Access to the path '".APPPATH."' is denied. Change your permision path to 777.");
          fwrite($listFile, $listTemplate);
          fclose($listFile);
          // .make list
@@ -813,7 +813,7 @@ class '.$data['model'].' extends Model{
 
          // make form
          $formFile = fopen(APPPATH.'Views/'.$data['table'].'/form.php','w')
-            or die("Access to the path '".APPPATH."app/' is denied. Change your permision path to 777.");
+            or $this->failServerError("Access to the path '".APPPATH."' is denied. Change your permision path to 777.");
          fwrite($formFile, $formTemplate);
          fclose($formFile);
          // .make form
@@ -1255,7 +1255,7 @@ class '.$data['controller'].' extends Controller{
 
          // make controller
          $controllerFile = fopen(APPPATH.'Controllers/'.$data['controller'].'.php','w')
-            or die("Access to the path '".APPPATH."app/' is denied. Change your permision path to 777.");
+            or $this->failServerError("Access to the path '".APPPATH."' is denied. Change your permision path to 777.");
          fwrite($controllerFile, $controllerTemplate);
          fclose($controllerFile);
          // .make controller
