@@ -540,7 +540,13 @@ class '.$data['model'].' extends Model{
          foreach ($data['non_pk'] as $nonPks => $nonPk) {
             if($i < 5){
                $listTemplate .= '
-               { "data": "'.$nonPk->name.'"},';
+               { "data": "'.$nonPk->name.'"';
+
+               if ($nonPk->type == 'tinyblob' || $nonPk->type == 'blob' || $nonPk->type == 'mediumblob' || $nonPk->type == 'longblob') {
+                  $listTemplate .= ', "searchable" : false, "orderable" : false';
+               }
+
+               $listTemplate .= '},';
             }
             $i++;
          }
