@@ -461,36 +461,36 @@ class '.$data['model'].' extends Model{
    <body>
       <main class="p-3" role="main">
          <div class="container">
-            <div class="row">
-               <div class="col-12">
-                  <div class="card">
-                     <div class="card-header">
-                        <h3><?= $title ?></h3>
-                     </div>
-                     <div class="card-body">
-                     <div class="btn-group float-left" role="group" aria-label="Action">
-                        <button class="btn btn-sm btn-outline-danger bulk-delete">Delete</button>
-                        <button class="btn btn-sm btn-outline-primary refresh" purpose="add">Refresh</button>
-                     </div>
+            <div class="row justify-content-center">
+               <div class="card">
+                  <div class="card-header">
+                     <h3><?= $title ?></h3>
+                  </div>
+                  <div class="card-body">
+                     <p>
+                        <div class="btn-group" role="group" aria-label="Action">
+                           <button class="btn btn-sm btn-outline-danger float-left bulk-delete">Delete</button>
+                           <button class="btn btn-sm btn-outline-primary float-left refresh" purpose="add">Refresh</button>
+                        </div>
                         <button class="btn btn-sm btn-primary float-right form-action" purpose="add">Add</button>
-                        <table id="datatable" class="table table-striped table-bordered" cellspacing="0">
-                           <thead class="text-center">
-                              <tr>
-                              <th style="width: 0px"><input type="checkbox" class="check-items"></th>';
+                     </p>
+                     <table id="datatable" class="table table-striped table-responsive table-bordered" cellspacing="0" style="width: 100%">
+                        <thead class="text-center">
+                           <tr>
+                           <th style="width: 0px"><input type="checkbox" class="check-items"></th>';
          $i = 0;
          foreach ($data['non_pk'] as $nonPks => $nonPk) {
             if($i < 5){
                $listTemplate .= '
-                              <th>'.humanize($nonPk->name).'</th>';
+                           <th>'.humanize($nonPk->name).'</th>';
             }
             $i++;
          }
          $listTemplate .= '
-                              <th style="width: 0px">#</th>
-                              </tr>
-                           </thead>
-                        </table>
-                     </div>
+                           <th style="width: 0px">#</th>
+                           </tr>
+                        </thead>
+                     </table>
                   </div>
                </div>
             </div>
