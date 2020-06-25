@@ -62,6 +62,23 @@ start http://localhost:8080; php spark serve
 
 5. Selesai
 
+## Cuplikan
+
+- Generator
+![N|Solid](https://raw.githubusercontent.com/banguncode/BCODE-CRUD-GENERATOR/master/screenshots/Generator.png)
+
+- Contoh formulir
+![N|Solid](https://raw.githubusercontent.com/banguncode/BCODE-CRUD-GENERATOR/master/screenshots/Example-form.png)
+
+- Contoh detail
+![N|Solid](https://raw.githubusercontent.com/banguncode/BCODE-CRUD-GENERATOR/master/screenshots/Example-detail.png)
+
+- Contoh data
+![N|Solid](https://raw.githubusercontent.com/banguncode/BCODE-CRUD-GENERATOR/master/screenshots/Example-data.png)
+
+- Contoh data mengandung media
+![N|Solid](https://raw.githubusercontent.com/banguncode/BCODE-CRUD-GENERATOR/master/screenshots/Example-data-with-media.png)
+
 ## Colek
 
 - [codeigniter4/CodeIgniter4](https://github.com/codeigniter4/CodeIgniter4)
